@@ -97,6 +97,8 @@ button:focus {
 }
 
 form {
+  max-width: 503px;
+  width: 100%;
   margin-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,7 +106,7 @@ form {
   max-height: 63px;
 }
 form .form__destination {
-  width: 503px;
+  width: inherit;
   height: 63px;
   font-family: "Josefin Sans";
   font-style: normal;
@@ -175,6 +177,9 @@ form .form__destination__button__icon {
   color: #FFFFFF;
   margin-left: 40px;
   margin-right: 10px;
+}
+.nav__burger {
+  display: none;
 }
 
 ul {
@@ -539,10 +544,34 @@ h3 {
   .booknow__container__inner {
     margin: 99px 20px;
   }
+  .review__container__text {
+    margin-bottom: 20px;
+  }
 }
-@media screen and (max-width: 752px) {
+@media screen and (max-width: 780px) {
+  .graphics__container__img {
+    display: none;
+  }
+  .graphics__container__subcontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+    margin-top: 30px;
+  }
   .choose__left {
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .choose__left__button {
+    margin: auto;
   }
   .choose__right {
     margin-top: 30px;
@@ -556,10 +585,29 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .booknow__container__button {
+    margin: 10px auto;
+  }
+  .review__title {
+    margin: 30px 10px;
+    text-align: center;
+  }
   .review__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 445px;
+    padding-bottom: 15px;
+  }
+  .review__container__text {
+    margin-bottom: 20px;
+  }
+  .nav__disappear {
+    display: none;
+  }
+  .nav__burger {
+    display: block;
+    margin-right: 30px;
   }
 }

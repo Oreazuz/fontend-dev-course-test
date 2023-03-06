@@ -86,13 +86,15 @@ button{
     }
 }
 form{
-
+    max-width: 503px;
+    width:100%;
     margin-top: 48px;
     display: flex;
     max-height: 63px;    
 
     .form__destination{
-        width: 503px;
+        
+        width: inherit;
         height: 63px;
         font-family: 'Josefin Sans';
         font-style: normal;
@@ -168,6 +170,10 @@ form{
         margin-left: 40px;
         margin-right: 10px;
         
+    }
+
+    &__burger{
+        display: none;
     }
     
 }
@@ -274,6 +280,10 @@ h3{
         align-items: center;
         position: relative;
         flex-direction: column;
+
+        &__img{
+            
+        }
 
         &__subcontainer{
             display: flex;
@@ -504,12 +514,30 @@ h3{
         margin: 99px 20px;
     }
 
+    .review__container__text{
+        margin-bottom: 20px;
+    }
 }
 
-@media screen and (max-width: 752px){
+@media screen and (max-width: 780px){
 
+
+    .graphics__container__img{
+        display: none;
+    }
+    .graphics__container__subcontainer{
+        flex-direction: column;
+        top:0;
+        margin-top: 30px;
+    }
     .choose__left{
         margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+
+        &__button{
+            margin: auto;
+        }
     }
     .choose__right{
         margin-top: 30px;
@@ -523,9 +551,34 @@ h3{
 
         
     }
-
-    .review__container{
-        flex-direction: column;
+    .booknow__container__button{
+        margin: 10px auto;
     }
 
+    .review__title{
+        margin: 30px 10px;
+        text-align: center;
+        
+    }
+    .review__container{
+        flex-direction: column;
+        max-width: 445px;
+        padding-bottom: 15px;
+
+        &__text{
+            margin-bottom: 20px;
+        }
+    }
+
+    .nav{
+
+        &__disappear{
+            display: none;
+        }
+
+        &__burger{
+            display: block;
+            margin-right: 30px;
+        }
+    }
 }
