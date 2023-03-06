@@ -166,13 +166,20 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.choose__container {
+  margin: auto;
+  max-width: 1173px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -183,4 +190,51 @@ ul {
 .choose__left__button {
   width: 228px;
   height: 63px;
+}
+.choose__left__text {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+  color: #E8E8E8;
+  margin-bottom: 45px;
+}
+.choose__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 440px;
+  width: 100%;
+}
+.choose__right__image {
+  max-width: 350px;
+  margin-bottom: 10px;
+}
+.choose__right__image__one {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.choose__right__image__two {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+h3 {
+  font-family: "Aleo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.booknow {
+  min-height: 1400px;
 }
