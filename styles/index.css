@@ -238,3 +238,88 @@ h3 {
 .booknow {
   min-height: 1400px;
 }
+.booknow__top {
+  background-image: url("../images/BooknowBackground1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.booknow__bottom {
+  background-image: url("../images/BooknowBackground2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.booknow__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1173px;
+  width: 100%;
+  height: 100%;
+}
+.booknow__container__bottom {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.booknow__container__inner {
+  background-color: #232323;
+  opacity: 0.9;
+  max-width: 513px;
+  padding-left: 30px;
+  max-height: 374px;
+  margin-bottom: 99px;
+}
+.booknow__container__h5 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 1.5px;
+  color: #E8E8E8;
+  margin-top: 49px;
+}
+.booknow__container__h4 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 23px;
+}
+.booknow__container__text {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #E8E8E8;
+  margin-top: 13px;
+}
+.booknow__container__button {
+  width: 228px;
+  height: 63px;
+  margin: 50px 0;
+}
