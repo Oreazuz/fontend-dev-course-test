@@ -37,8 +37,10 @@ a {
   text-decoration: inherit;
   color: inherit;
 }
-a:hover {
-  size: 1.1;
+a:focus {
+  border: 2px solid #FFFFFF;
+  outline: 0;
+  padding: 5px;
 }
 
 .header__scroll {
@@ -136,6 +138,9 @@ form .form__destination__button {
 form .form__destination__button:hover {
   border-left: 2px solid #5474FD;
 }
+form .form__destination__button:focus {
+  border-left: 2px solid #5474FD;
+}
 form .form__destination__button__icon {
   font-size: 22px;
   margin-left: 10px;
@@ -164,10 +169,19 @@ form .form__destination__button__icon {
   color: #FFFFFF;
   margin-left: 10px;
 }
+.nav__title:focus {
+  border: 2px solid #FFFFFF;
+}
+.nav__title:hover {
+  border-bottom: 2px solid #FFFFFF;
+}
 .nav__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 .nav__item {
   font-family: "Aleo";
@@ -179,8 +193,19 @@ form .form__destination__button__icon {
   margin-left: 40px;
   margin-right: 10px;
 }
+.nav__item:focus {
+  border: 2px solid #FFFFFF;
+}
+.nav__item:hover {
+  border-bottom: 2px solid #FFFFFF;
+}
 .nav__burger {
   display: none;
+  font-size: 32px;
+  width: 30px;
+}
+.nav__burger:focus {
+  border: 2px solid #FFFFFF;
 }
 
 ul {
@@ -537,8 +562,17 @@ h3 {
   color: #E8E8E8;
   margin: 24px 10px;
 }
+.footer__icons:hover {
+  color: #5474FD;
+}
+.footer__icons:focus {
+  border: 2px solid #FFFFFF;
+}
 .footer__icons__linkedin {
   color: #5474FD;
+}
+.footer__icons__linkedin:hover {
+  color: #E8E8E8;
 }
 
 @media screen and (max-width: 1210px) {

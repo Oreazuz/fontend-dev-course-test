@@ -22,8 +22,10 @@ a{
     text-decoration: inherit;
     color: inherit;
 
-    &:hover{
-        size: 1.1;
+    &:focus{
+        border: 2px solid #FFFFFF;
+        outline: 0;
+        padding: 5px
     }
 }
 
@@ -85,6 +87,7 @@ button{
         color: #4864e0;
     }
 }
+
 form{
     max-width: 503px;
     width:100%;
@@ -121,6 +124,9 @@ form{
             &:hover{
                 border-left: 2px solid #5474FD;
             }
+            &:focus{
+                border-left: 2px solid #5474FD;
+            }
 
             &__icon{
                font-size: 22px; 
@@ -155,10 +161,19 @@ form{
         color: #FFFFFF;
         margin-left: 10px;
 
+        &:focus     {
+            border: 2px solid #FFFFFF;
+        }
+
+        &:hover{
+            border-bottom:2px solid #FFFFFF;
+        }
+
     }
 
     &__right{
         display: flex;
+        align-items: baseline;
     }
 
     &__item{
@@ -171,10 +186,24 @@ form{
         margin-left: 40px;
         margin-right: 10px;
         
+        &:focus     {
+            border: 2px solid #FFFFFF;
+        }
+
+        &:hover{
+            border-bottom:2px solid #FFFFFF;
+        }
+        
     }
 
     &__burger{
         display: none;
+        font-size: 32px;
+        width: 30px;
+
+        &:focus{
+            border: 2px solid #FFFFFF;
+        }
     }
     
 }
@@ -501,9 +530,22 @@ h3{
         line-height: 26px;
         color: #E8E8E8; 
         margin: 24px 10px;
+        
+
+        &:hover{
+            color: #5474FD;
+        }
+
+        &:focus{
+            border: 2px solid #FFFFFF;
+        }
 
         &__linkedin{
             color: #5474FD;
+
+            &:hover{
+                color: #E8E8E8; 
+            }
 
         }
     }
