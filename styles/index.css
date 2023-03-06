@@ -549,6 +549,24 @@ h3 {
   }
 }
 @media screen and (max-width: 780px) {
+  .header__h2 {
+    text-align: center;
+  }
+  .form__destination::-webkit-input-placeholder {
+    letter-spacing: normal;
+  }
+  .form__destination::-moz-placeholder {
+    letter-spacing: normal;
+  }
+  .form__destination:-ms-input-placeholder {
+    letter-spacing: normal;
+  }
+  .form__destination::-ms-input-placeholder {
+    letter-spacing: normal;
+  }
+  .form__destination::placeholder {
+    letter-spacing: normal;
+  }
   .graphics__container__img {
     display: none;
   }
