@@ -135,11 +135,11 @@ form{
 .nav{
     background-color:#5474FD;
     width: 100%;
-
+    z-index: 1;
     min-height: 83px;
 
-    position: absolute;
-    bottom: 1px;
+    position: sticky;
+    top:0;
     display: flex;
     
     &__title{
