@@ -471,6 +471,10 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.review__container__img {
+  max-width: 445px;
+  max-height: 284px;
+}
 .review__container__right {
   margin-left: 50px;
 }
@@ -529,4 +533,33 @@ h3 {
 }
 .footer__icons__linkedin {
   color: #5474FD;
+}
+
+@media screen and (max-width: 1210px) {
+  .booknow__container__inner {
+    margin: 99px 20px;
+  }
+}
+@media screen and (max-width: 752px) {
+  .choose__left {
+    margin-top: 30px;
+  }
+  .choose__right {
+    margin-top: 30px;
+  }
+  .choose__right__image {
+    max-width: 300px;
+  }
+  .choose__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .review__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }

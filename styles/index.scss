@@ -429,6 +429,11 @@ h3{
         background-color    : #333333;
         justify-content: space-between;
 
+        &__img{
+            max-width: 445px;
+            max-height: 284px;
+        }
+
         &__right{
             margin-left: 50px;
         }
@@ -491,4 +496,36 @@ h3{
 
         }
     }
+}
+
+@media screen and (max-width: 1210px){
+
+    .booknow__container__inner{
+        margin: 99px 20px;
+    }
+
+}
+
+@media screen and (max-width: 752px){
+
+    .choose__left{
+        margin-top: 30px;
+    }
+    .choose__right{
+        margin-top: 30px;
+
+        &__image{
+            max-width: 300px;
+        }
+    }
+    .choose__container{
+        flex-direction: column;
+
+        
+    }
+
+    .review__container{
+        flex-direction: column;
+    }
+
 }
