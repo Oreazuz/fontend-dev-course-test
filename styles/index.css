@@ -1,36 +1,52 @@
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-header{
-    background-image:url("../images/HeaderBackground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 820px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+header {
+  background-image: url("../images/HeaderBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 820px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-h1{
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 26px;
-    color: #FFFFFF;
+h1 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 26px;
+  color: #FFFFFF;
 }
 
-h2{
-    font-family: 'Josefin Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    color: #FFFFFF;
-    letter-spacing: 6.82px;
-    margin-top: 11px;
+h2 {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  letter-spacing: 6.82px;
+  margin-top: 11px;
 }
