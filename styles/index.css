@@ -33,6 +33,14 @@ header {
   position: relative;
 }
 
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+a:hover {
+  size: 1.1;
+}
+
 .header__scroll {
   font-family: "Josefin Sans";
   font-style: normal;
@@ -80,7 +88,12 @@ button {
 }
 button:hover {
   background-color: #FFFFFF;
-  color: #5474FD;
+  color: #4864e0;
+}
+button:focus {
+  background-color: #E8E8E8;
+  border: 2px solid #E8E8E8;
+  color: #4864e0;
 }
 
 form {
@@ -117,6 +130,9 @@ form .form__destination__button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+form .form__destination__button:hover {
+  border-left: 2px solid #5474FD;
 }
 form .form__destination__button__icon {
   font-size: 22px;
@@ -263,6 +279,7 @@ h3 {
 .graphics__container {
   margin: auto;
   max-width: 1173px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -285,15 +302,53 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 800px;
+  max-width: 950px;
   width: 100%;
   position: relative;
   top: -40px;
   background-color: #333333;
 }
+.graphics__container__subcontainer__img {
+  max-width: 60px;
+  margin-bottom: 35px;
+}
+.graphics__container__subcontainer__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .graphics__container__subcontainer__center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   left: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.graphics__container__subcontainer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .booknow {
@@ -415,6 +470,9 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.review__container__right {
+  margin-left: 50px;
 }
 .review__container__h4 {
   margin-top: 49px;

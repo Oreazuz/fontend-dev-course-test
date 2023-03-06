@@ -18,6 +18,14 @@ header{
     
     
 }
+a{
+    text-decoration: inherit;
+    color: inherit;
+
+    &:hover{
+        size: 1.1;
+    }
+}
 
 .header__scroll{
     font-family: 'Josefin Sans';
@@ -68,7 +76,13 @@ button{
 
     &:hover{
         background-color:#FFFFFF;
-        color: #5474FD;
+        color: #4864e0;
+    }
+
+    &:focus{
+        background-color: #E8E8E8;
+        border: 2px solid #E8E8E8;
+        color: #4864e0;
     }
 }
 form{
@@ -102,6 +116,10 @@ form{
             justify-content: flex-end;
 
             
+            &:hover{
+                border-left: 2px solid #5474FD;
+            }
+
             &__icon{
                font-size: 22px; 
                 margin-left: 10px;
@@ -250,6 +268,7 @@ h3{
     &__container{
         margin: auto;
         max-width:1173px;
+        width:100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -259,15 +278,36 @@ h3{
         &__subcontainer{
             display: flex;
             justify-content: space-between;
-            max-width: 800px;
+            max-width: 950px;
             width: 100%;
             position: relative;
             top: -40px;
             background-color: #333333;
 
+            &__img{
+                max-width: 60px;
+                margin-bottom: 35px;
+            }
+
+            &__left{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+
             &__center{
+                display:flex;
+                flex-direction: column;
                 position: relative;
                 left: 5px;
+                align-items: center;
+            }
+
+            &__right{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
 
@@ -388,6 +428,10 @@ h3{
         display: flex;
         background-color    : #333333;
         justify-content: space-between;
+
+        &__right{
+            margin-left: 50px;
+        }
 
         &__h4{
             margin-top: 49px;
