@@ -10,15 +10,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
+        
         <h1>BHROMAON</h1>
         <h2>Safe Travel Anywhere</h2>
         <form action="#">
-            <input class="form__destination" type="text">
-            <button></button>
+            <input class="form__destination" type="text" id="destination" name="destination" placeholder="Search Your Travel Destination">
+            <button class="form__destination__button">SEARCH <i class="fa-thin fa-magnifying-glass"></i></button>
         </form>
+
+        <p class="header__scroll">Scroll Down</p>
+        <p class="header__scroll arrow">arrow down</p>
+
+        <nav class="nav"> 
+            <ul>
+                <li class="nav__title">BHROMAON</li>
+                <div class="nav__right">
+                    <li class="nav__item">WHO WE ARE</li>
+                    <li class="nav__item">WHAT WE DO</li>
+                    <li class="nav__item">TRAVEL WITH US</li>
+                    <li class="nav__item">CONTACT US</li>
+                </div>
+            </ul>
+        </nav>
+
     </header>
 </body>
 </html>
