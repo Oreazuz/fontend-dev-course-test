@@ -27,14 +27,15 @@
         <p class="header__scroll arrow"><i class="fa-solid fa-chevron-down"></i></p>
 
         <nav class="nav" id="nav"> 
-            <ul>
+            <ul id="nav-bar">
                 <li class="nav__title"><a href="#header"> BHROMAON</a></li>
                 <div class="nav__right">
+                    <li class="nav__item nav__burger"><a href="#menu" onclick="burgerMenu()"><i class="fa-solid fa-bars"></i></a></li>
                     <li class="nav__item nav__disappear"><a href="#choose"> WHO WE ARE</a></li>
                     <li class="nav__item nav__disappear"><a href="#graphics"> WHAT WE DO </a></li>
                     <li class="nav__item nav__disappear"><a href="#booknow"> TRAVEL WITH US </a></li>
                     <li class="nav__item nav__disappear"><a href="#footer">CONTACT US </a></li>
-                    <li class="nav__item nav__burger"><i class="fa-solid fa-bars"></i></li>
+                    
                 </div>
             </ul>
         </nav>
@@ -131,5 +132,16 @@
             <i class="fa-brands fa-pinterest footer__icons"></i>  
         </div>
     </footer>
+
+    <script>
+        function burgerMenu() {
+            let burger = document.getElementById("nav-bar");
+            if (burger.className === "nav") {
+            burger.className += " responsive";
+            } else {
+            burger.className = "nav";
+            }
+        }
+    </script>
 </body>
 </html>

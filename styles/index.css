@@ -587,9 +587,13 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
   .choose__left__button {
     margin: auto;
+  }
+  .choose__left__text {
+    margin: 0 15px 15px;
   }
   .choose__right {
     margin-top: 30px;
@@ -627,5 +631,34 @@ h3 {
   .nav__burger {
     display: block;
     margin-right: 30px;
+    margin-top: 10px;
+  }
+  .nav.responsive .nav__right li:not(:first-child) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 2px solid white;
+    margin: 5px;
+    padding: 5px;
+    max-width: 110px;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+  }
+  .nav.responsive .nav__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }

@@ -543,9 +543,14 @@ h3{
         margin-top: 30px;
         display: flex;
         flex-direction: column;
+        text-align: center;
 
         &__button{
             margin: auto;
+        }
+
+        &__text{
+           margin: 0 15px 15px;
         }
     }
     .choose__right{
@@ -588,6 +593,25 @@ h3{
         &__burger{
             display: block;
             margin-right: 30px;
+            margin-top: 10px;
+        }
+
+        &.responsive .nav__right li:not(:first-child){
+                display:flex;
+                flex-direction: column;
+                border: 2px solid white;
+                margin: 5px;
+                padding: 5px;
+                max-width: 110px;
+                width: 100%;
+                border-radius: 15px;
+                text-align: center;
+        }
+
+        &.responsive .nav__right{
+                display:flex;
+                flex-direction: column;
+                align-items: flex-end;
         }
     }
 }
